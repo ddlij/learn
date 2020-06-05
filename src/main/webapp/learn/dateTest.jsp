@@ -9,11 +9,14 @@
 <%@taglib prefix="ddlij" uri="ddlij-tagTest" %>
 <html>
 <head>
-    <title>Title</title>
+    <script src="/js/MyDatePicker/WdatePicker.js" type="text/javascript"></script>
 </head>
 <body>
     <div>
-        <ddlij:hello defaultValue="ddlij"> hello world </ddlij:hello>
+        <ddlij:dateTag id="ddlij" format="yyyy-MM-dd" dateValue="2020-05-05"></ddlij:dateTag>
     </div>
 </body>
+
+<script>
+</script>
 </html>

@@ -14,4 +14,11 @@ public class LearnTestPageController {
     public String firstLearn(HttpServletRequest request, HttpServletResponse response, Model model){
         return "learn/hello";
     }
+
+    @RequestMapping(value = "/dateTagTest.web" , method= RequestMethod.GET)
+    public String dateTagTest(HttpServletRequest request, HttpServletResponse response, Model model){
+        String ctx = request.getContextPath();
+        model.addAttribute("systemctx",ctx);
+        return "learn/dateTest";
+    }
 }
